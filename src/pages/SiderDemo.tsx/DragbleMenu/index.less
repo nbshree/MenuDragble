@@ -1,0 +1,40 @@
+.main {
+  :global(.ant-menu-item) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &:global(.ant-menu-inline-collapsed) {
+    :global {
+      .ant-menu-item {
+        text-align: center;
+        .anticon {
+          margin: 0;
+        }
+        .anticon + span {
+          display: inline-block;
+          max-width: 0;
+          opacity: 0;
+        }
+      }
+      .ant-menu-submenu {
+        .ant-menu-submenu-title {
+          left: 0;
+          padding: 0 calc(50% - 8px);
+          text-overflow: clip;
+        }
+        .anticon {
+          margin: 0;
+          font-size: 16px;
+        }
+        .anticon + span {
+          display: inline-block;
+          max-width: 0;
+          opacity: 0;
+        }
+        .ant-menu-submenu-arrow {
+          display: none;
+        }
+      }
+    }
+  }
+}
